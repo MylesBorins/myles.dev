@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "the-static-zone"
+  },
+  "targets": {
+    "the-static-zone": {
+      "hosting": {
+        "myles-dev": [
+          "myles-dev"
+        ]
+      }
+    }
+  }
+}
