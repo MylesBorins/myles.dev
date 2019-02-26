@@ -18,26 +18,26 @@
     /* all other browsers */
     @keyframes spinner {
       0% {
-        transform: rotateX(0deg) rotateZ(0deg) translateY(0px);
+        transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
       }
       25% {
-        transform: rotateX(-90deg) rotateZ(45deg) translateY(100px);
+        transform: rotateY(-45deg) rotateZ(45deg) translateY(100px);
       }
       50% {
-        transform: rotateX(0deg) rotateZ(0deg) translateY(0px);
+        transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
       }
       75% {
-        transform: rotateX(90deg) rotateZ(-45deg) translateY(100px);
+        transform: rotateY(-45deg) rotateZ(-45deg) translateY(100px);
       }
       100% {
-        transform: rotateX(0deg) rotateZ(0deg) translateY(0px);
+        transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
       }
     }
     #spinner {
       animation-name: spinner;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
-      animation-duration: 20s;
+      animation-duration: 15s;
       transform-style: preserve-3d;
     }
   </style>
