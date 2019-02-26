@@ -14,83 +14,109 @@
         float: left;
       }
     }
+
+    /* all other browsers */
+    @keyframes spinner {
+      0% {
+        transform: rotateX(0deg) rotateZ(0deg) translateY(0px);
+      }
+      25% {
+        transform: rotateX(-90deg) rotateZ(45deg) translateY(100px);
+      }
+      50% {
+        transform: rotateX(0deg) rotateZ(0deg) translateY(0px);
+      }
+      75% {
+        transform: rotateX(90deg) rotateZ(-45deg) translateY(100px);
+      }
+      100% {
+        transform: rotateX(0deg) rotateZ(0deg) translateY(0px);
+      }
+    }
+    #spinner {
+      animation-name: spinner;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 20s;
+      transform-style: preserve-3d;
+    }
   </style>
   <title>myles.dev</title>
-
-  
 </head>
 <body>
-  <div class="block">
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=100>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=170>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
-  </div>
-  <div class="block">
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=100>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=170>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
-    <marquee behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
+  <div id="spinner">
+    <div class="block">
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=100>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=170>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
+    </div>
+    <div class="block">
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=100>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=170>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=165>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=160>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=155>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=150>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=145>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=140>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=135>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=130>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=125>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=120>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=115>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=110>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=105>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=95>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=90>Welcome to <a href="/">myles.dev</a></marquee>
+      <marquee behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
+    </div>
   </div>
 </body>
 </html>
