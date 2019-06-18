@@ -4,8 +4,11 @@ body {
 
 #start {
   margin: 2em;
+  padding: 1em;
   color: white;
   background-color: black;
+  width: 75%;
+  margin-left: 12.5%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -40,14 +43,4 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 15s;
   transform-style: preserve-3d;
-}
-
-.blink {
-  animation: blinker 3s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
 }

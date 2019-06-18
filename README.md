@@ -10,6 +10,6 @@ $ npm start
 ## deploy
 
 ```sh
-$ npm install -g firebase
+$ npm install -g firebase-tools
 $ firebase deploy
 ```
