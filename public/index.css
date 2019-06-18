@@ -2,6 +2,12 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+#start {
+  margin: 2em;
+  color: white;
+  background-color: black;
+}
+
 @media only screen and (min-width: 800px) {
   .block {
     width: 50%;
@@ -10,7 +16,6 @@ body {
   }
 }
 
-/* all other browsers */
 @keyframes spinner {
   0% {
     transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
@@ -28,6 +33,7 @@ body {
     transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
   }
 }
+
 #spinner {
   animation-name: spinner;
   animation-timing-function: linear;
@@ -37,7 +43,7 @@ body {
 }
 
 .blink {
-  animation: blinker 1s linear infinite;
+  animation: blinker 3s linear infinite;
 }
 
 @keyframes blinker {
