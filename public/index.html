@@ -3,47 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <style>
-    body {
-      font-family: "Comic Sans MS", cursive, sans-serif;
-    }
-    @media only screen and (min-width: 800px) {
-      .block {
-        width: 50%;
-        display: block;
-        float: left;
-      }
-    }
-
-    /* all other browsers */
-    @keyframes spinner {
-      0% {
-        transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
-      }
-      25% {
-        transform: rotateY(-45deg) rotateZ(45deg) translateY(100px);
-      }
-      50% {
-        transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
-      }
-      75% {
-        transform: rotateY(-45deg) rotateZ(-45deg) translateY(100px);
-      }
-      100% {
-        transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
-      }
-    }
-    #spinner {
-      animation-name: spinner;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-duration: 15s;
-      transform-style: preserve-3d;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
   <title>myles.dev</title>
 </head>
 <body>
+  <marquee id="start" class="blink" direction="right" behavior="alternate" scrollamount="10">Click Me</marquee>
   <div id="spinner">
     <div class="block">
       <marquee direction="right" behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
@@ -118,5 +82,6 @@
       <marquee behavior="alternate" scrollamount="10" scrolldelay=85>Welcome to <a href="/">myles.dev</a></marquee>
     </div>
   </div>
+  <script src="./index.mjs" type="module"></script>
 </body>
 </html>

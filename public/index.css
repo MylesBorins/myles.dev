@@ -1,0 +1,47 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+@media only screen and (min-width: 800px) {
+  .block {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+}
+
+/* all other browsers */
+@keyframes spinner {
+  0% {
+    transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
+  }
+  25% {
+    transform: rotateY(-45deg) rotateZ(45deg) translateY(100px);
+  }
+  50% {
+    transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
+  }
+  75% {
+    transform: rotateY(-45deg) rotateZ(-45deg) translateY(100px);
+  }
+  100% {
+    transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
+  }
+}
+#spinner {
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  transform-style: preserve-3d;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
