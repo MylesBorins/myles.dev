@@ -40,6 +40,7 @@ function init() {
   gain.gain.value = 0.6;
   gain.connect(context.destination)
   makeOscillators(context, gain);
+  return context;
 }
 
 export {

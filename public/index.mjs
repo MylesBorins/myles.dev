@@ -13,23 +13,24 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-let audio;
+import { init, stepOscillators } from './audio.mjs';
+
+let audioContext;
 
 const start = document.getElementById('start');
 let clicked = false;
 let lastY = 0;
 
-start.onclick = async function onclick() {
+start.onclick = function onclick() {
   if (clicked) return;
   clicked = true;
-  audio = await import('./audio.mjs');
-  audio.init();
+  audioContext = init();
   start.setAttribute('style', 'display: none;')
 }
 
 document.body.onscroll = function onscroll() {
-  if (!audio) return;
-  let diff = window.scrollY - lastY;
+  if (!audioContext) return;
+  const diff = window.scrollY - lastY;
   lastY = window.scrollY;
-  audio.stepOscillators(diff);
+  stepOscillators(diff);
 }
