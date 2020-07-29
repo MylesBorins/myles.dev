@@ -33,18 +33,9 @@ body {
 }
 
 @keyframes spinner {
-/*  0% {
-    transform: rotateY(0deg) rotateZ(0deg) translateY(0px);
-  }
-  25% {
-    transform: rotateY(-45deg) rotateZ(45deg) translateY(100px);
-  }*/
   50% {
     transform: rotateY(360deg) rotateZ(10deg);
   }
-/*  75% {
-    transform: rotateY(-45deg) rotateZ(-45deg) translateY(100px);
-  }*/
   100% {
     transform: rotateY(720deg) rotateZ(0deg);
   }
