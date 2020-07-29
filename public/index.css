@@ -12,6 +12,23 @@ body {
   cursor: pointer;
 }
 
+@keyframes spinner {
+  50% {
+    transform: rotateY(360deg) rotateZ(10deg);
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(0deg);
+  }
+}
+
+#spinner {
+  animation-name: spinner;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  transform-style: preserve-3d;
+}
+
 #github-link {
   position: fixed;
   bottom: 0;
@@ -30,21 +47,4 @@ body {
     display: block;
     float: left;
   }
-}
-
-@keyframes spinner {
-  50% {
-    transform: rotateY(360deg) rotateZ(10deg);
-  }
-  100% {
-    transform: rotateY(720deg) rotateZ(0deg);
-  }
-}
-
-#spinner {
-  animation-name: spinner;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  transform-style: preserve-3d;
 }
