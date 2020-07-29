@@ -9,24 +9,22 @@
     "start": "npm run build && serve dist/",
     "dev": "serve public/",
     "deploy": "npm run build && firebase deploy",
-    "build": "npm run build:clean && npm run build:css && npm run build:js && npm run build:html && npm run build:img",
+    "build": "echo build:clean build:css build:js build:html build:img | xargs -n1 npm run",
     "build:clean": "rm -rf dist/ && mkdir dist/",
     "build:css": "postcss public/index.css -o dist/index.css",
     "build:js": "terser public/index.mjs -o dist/index.mjs && terser public/audio.mjs -o dist/audio.mjs",
-    "build:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true public/index.html > dist/index.html",
+    "build:html": "html-minifier -c ./.htmlminrc.json public/index.html > dist/index.html",
     "build:img": "cp public/social.jpg dist/social.jpg && cp public/github.png dist/github.png"
   },
   "keywords": [],
   "author": "Myles Borins <myles.borins@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
     "cssnano": "^4.1.10",
     "eslint": "^7.5.0",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^7.1.1",
     "serve": "^11.0.1",
     "terser": "^4.0.0"
-  },
-  "dependencies": {}
+  }
 }
