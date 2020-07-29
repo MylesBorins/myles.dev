@@ -12,6 +12,18 @@ body {
   cursor: pointer;
 }
 
+#github-link {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+}
+
+#github-link a img {
+  width: 64px;
+  height: 64px
+}
+
 @media only screen and (min-width: 800px) {
   .block {
     width: 50%;
