@@ -8,7 +8,6 @@
     "lint": "eslint public/*.mjs",
     "start": "npm run build && serve dist/",
     "dev": "serve public/",
-    "deploy": "npm run build && firebase deploy",
     "build": "echo build:clean build:css build:js build:html build:img | xargs -n1 npm run",
     "build:clean": "rm -rf dist/ && mkdir dist/",
     "build:css": "postcss public/index.css -o dist/index.css",
