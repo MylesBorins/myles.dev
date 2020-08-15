@@ -3,7 +3,7 @@
 name: Relase
 on:
   release:
-    types: [created]
+    types: [prereleased, released, created, published]
 
 jobs:
   build:
