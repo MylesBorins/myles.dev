@@ -3,7 +3,7 @@
 name: Relase
 on:
   release:
-    [created]
+    types: [created]
 
 jobs:
   build:
