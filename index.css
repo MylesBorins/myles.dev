@@ -1,0 +1,55 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#start {
+  margin: 2em;
+  padding: 1em;
+  color: white;
+  background-color: black;
+  width: 75%;
+  margin-left: 12.5%;
+  cursor: pointer;
+}
+
+@keyframes spinner {
+  50% {
+    transform: rotateY(360deg) rotateZ(10deg);
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(0deg);
+  }
+}
+
+#spinner {
+  animation-name: spinner;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  transform-style: preserve-3d;
+}
+
+#github-link {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+}
+
+#github-link a img {
+  width: 64px;
+  height: 64px;
+  transition: all .2s ease-in-out;
+}
+
+#github-link a img:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 800px) {
+  .block {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+}
