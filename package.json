@@ -13,7 +13,7 @@
     "build:css": "postcss public/index.css -o dist/index.css",
     "build:js": "terser public/index.mjs -o dist/index.mjs && terser public/audio.mjs -o dist/audio.mjs",
     "build:html": "html-minifier -c ./.htmlminrc.json public/index.html > dist/index.html",
-    "build:img": "cp public/social.jpg dist/social.jpg && cp public/github.png dist/github.png"
+    "build:img": "cp -r ./public/images/ ./dist/images/"
   },
   "keywords": [],
   "author": "Myles Borins <myles.borins@gmail.com>",
