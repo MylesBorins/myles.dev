@@ -9,7 +9,4 @@ $ npm start
 
 ## deploy
 
-```sh
-$ npm install -g firebase-tools
-$ firebase deploy
-```
+auto deployed via GitHub pages 🎉
