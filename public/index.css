@@ -10,6 +10,7 @@ body {
   width: 75%;
   margin-left: 12.5%;
   cursor: pointer;
+  text-align: center;
 }
 
 @keyframes spinner {

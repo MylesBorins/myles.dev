@@ -18,14 +18,29 @@ import { init, stepOscillators } from './audio.mjs';
 let audioContext;
 
 const start = document.getElementById('start');
-let clicked = false;
+
 let lastY = 0;
+let clicks = 0;
+
+function firstClick() {
+  document.body.style['background-color'] = 'rgba(0, 0, 0, 0.5)';
+  start.style['width'] = '40%';
+  start.style['margin-left'] = '30%';
+  start.style['font-size'] = '20px';
+  start.textContent = '⚠️ Are you sure? ⚠️'
+  clicks++;
+}
+
+function secondClick() {
+  document.body.style['background-color'] = '';
+  start.style['display'] = 'none';
+  audioContext = init();
+  clicks++
+}
 
 start.onclick = function onclick() {
-  if (clicked) return;
-  clicked = true;
-  audioContext = init();
-  start.setAttribute('style', 'display: none;')
+  if (!clicks) firstClick();
+  else if (clicks === 1) secondClick();  
 }
 
 document.body.onscroll = function onscroll() {
