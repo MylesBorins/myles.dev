@@ -13,6 +13,14 @@ body {
   text-align: center;
 }
 
+#content {
+  display: none;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+
 @keyframes spinner {
   50% {
     transform: rotateY(360deg) rotateZ(10deg);
