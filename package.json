@@ -24,7 +24,7 @@
     "html-minifier": "^4.0.0",
     "postcss-cli": "^8.1.0",
     "serve": "^13.0.2",
-    "terser": "^5.3.7"
+    "terser": "^5.14.2"
   },
   "dependencies": {
     "postcss": "^8.4.13"
