@@ -20,10 +20,10 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cssnano": "^5.1.7",
-    "eslint": "^7.5.0",
+    "eslint": "^8.20.0",
     "html-minifier": "^4.0.0",
-    "postcss-cli": "^8.1.0",
-    "serve": "^13.0.2",
+    "postcss-cli": "^10.0.0",
+    "serve": "^14.0.1",
     "terser": "^5.14.2"
   },
   "dependencies": {
