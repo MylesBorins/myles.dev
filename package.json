@@ -19,7 +19,7 @@
   "author": "Myles Borins <myles.borins@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cssnano": "^5.1.7",
+    "cssnano": "^6.0.0",
     "eslint": "^8.20.0",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^10.0.0",
