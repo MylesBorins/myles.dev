@@ -27,6 +27,6 @@
     "terser": "^5.14.2"
   },
   "dependencies": {
-    "postcss": "^8.4.13"
+    "postcss": "^8.4.31"
   }
 }
