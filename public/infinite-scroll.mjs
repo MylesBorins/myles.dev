@@ -34,7 +34,7 @@ function step(i, maxWidth = 50) {
 }
 
 function stepScroll () {
-  const text = `\<${step(count)}\>`;
+  const text = `<${step(count)}>`;
   content.append(createParagraph(text));
   count++;
 }
