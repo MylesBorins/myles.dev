@@ -24,9 +24,6 @@ let lastY = 0;
 let maxY = 0;
 let clicks = 0;
 
-function omg() {
-  consol.log('looool');
-}
 
 function firstClick() {
   document.body.style['background-color'] = 'rgba(0, 0, 0, 0.5)';
