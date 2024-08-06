@@ -2,13 +2,17 @@ body {
   font-family: 'Comic Neue', cursive, sans-serif;
 }
 
+#overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #start {
-  margin: 2em;
   padding: 1em;
   color: white;
   background-color: black;
   width: 75%;
-  margin-left: 12.5%;
   cursor: pointer;
   text-align: center;
 }
