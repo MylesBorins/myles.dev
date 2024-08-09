@@ -7,8 +7,6 @@ body {
   padding: 1em;
   color: white;
   background-color: black;
-  width: 75%;
-  margin-left: 12.5%;
   cursor: pointer;
   text-align: center;
 }
@@ -53,6 +51,12 @@ body {
 
 #github-link a img:hover {
   transform: scale(1.1);
+}
+
+#overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 800px) {
