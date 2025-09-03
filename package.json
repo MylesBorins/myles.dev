@@ -20,16 +20,16 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.29.0",
-    "cssnano": "^7.0.7",
-    "eslint": "^9.29.0",
-    "globals": "^16.2.0",
+    "@eslint/js": "^9.34.0",
+    "cssnano": "^7.1.1",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^11.0.0",
     "serve": "^14.2.0",
-    "terser": "^5.14.2"
+    "terser": "^5.44.0"
   },
   "dependencies": {
-    "postcss": "^8.4.31"
+    "postcss": "^8.5.6"
   }
 }
