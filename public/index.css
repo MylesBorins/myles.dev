@@ -11,6 +11,15 @@ body {
   margin-left: 12.5%;
   cursor: pointer;
   text-align: center;
+  /* reset button defaults */
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+}
+
+body.confirming {
+  background-color: #808080;
 }
 
 #content {
@@ -53,6 +62,36 @@ body {
 
 #github-link a img:hover {
   transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #spinner {
+    animation: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #f0f0f0;
+  }
+
+  a {
+    color: #aac4ff;
+  }
+
+  #start {
+    background-color: #f0f0f0;
+    color: #111;
+  }
+
+  #github-link a img {
+    filter: invert(1);
+  }
+
+  body.confirming {
+    background-color: #2a2a2a;
+  }
 }
 
 @media only screen and (min-width: 800px) {

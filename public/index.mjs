@@ -25,7 +25,7 @@ let maxY = 0;
 let clicks = 0;
 
 function firstClick() {
-  document.body.style['background-color'] = 'rgba(0, 0, 0, 0.5)';
+  document.body.classList.add('confirming');
   start.style['width'] = '40%';
   start.style['margin-left'] = '30%';
   start.style['font-size'] = '20px';
@@ -35,7 +35,7 @@ function firstClick() {
 }
 
 function secondClick() {
-  document.body.style['background-color'] = '';
+  document.body.classList.remove('confirming');
   start.style['display'] = 'none';
   audioContext = init();
   clicks++
