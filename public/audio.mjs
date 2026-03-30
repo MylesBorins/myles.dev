@@ -38,7 +38,7 @@ function init() {
   var context = new (window.AudioContext || window.webkitAudioContext)();
   var gain = context.createGain();
   gain.gain.value = 0.6;
-  gain.connect(context.destination)
+  gain.connect(context.destination);
   makeOscillators(context, gain);
   return context;
 }
@@ -46,4 +46,4 @@ function init() {
 export {
   init,
   stepOscillators
-}
+};

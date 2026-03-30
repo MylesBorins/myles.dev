@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 import { init, stepOscillators } from './audio.mjs';
-import { initScroll, stepScroll } from './infinite-scroll.mjs'
+import { initScroll, stepScroll } from './infinite-scroll.mjs';
 
 let audioContext;
 
@@ -29,7 +29,7 @@ function firstClick() {
   start.style['width'] = '40%';
   start.style['margin-left'] = '30%';
   start.style['font-size'] = '20px';
-  start.textContent = '⚠️ Are you sure? ⚠️'
+  start.textContent = '⚠️ Are you sure? ⚠️';
   clicks++;
   initScroll();
 }
@@ -38,13 +38,13 @@ function secondClick() {
   document.body.classList.remove('confirming');
   start.style['display'] = 'none';
   audioContext = init();
-  clicks++
+  clicks++;
 }
 
 start.onclick = function onclick() {
   if (!clicks) firstClick();
   else if (clicks === 1) secondClick();  
-}
+};
 
 document.body.onscroll = function onscroll() {
   if (!audioContext) return;
@@ -55,4 +55,4 @@ document.body.onscroll = function onscroll() {
     stepScroll();
   }
   stepOscillators(diff);
-}
+};

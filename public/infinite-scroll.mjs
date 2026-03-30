@@ -49,4 +49,4 @@ function initScroll () {
 export {
   initScroll,
   stepScroll
-}
+};
